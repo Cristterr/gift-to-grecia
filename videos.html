@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles4.css">
+    <link rel="icon" href="img/logovideo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Itim&family=Julee&family=Merienda:wght@300..900&family=Neucha&family=Patrick+Hand&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Videos Gallery</title>
+</head>
+
+<body>
+
+    <h1 class="heading">Video gallery</h1>
+
+    <div class="container">
+
+        <div class="main-video">
+            <div class="video">
+                <video src="./videos/video1.mp4" controls muted autoplay></video>
+                <h3 class="title">We were couples without knowing it yet</h3>
+            </div>
+        </div>
+
+        <div class="video-list">
+            <div class="vid active">
+                <video src="./videos/video1.mp4" muted></video>
+                <h3 class="title">We were couples without knowing it yet</h3>
+            </div>
+            <div class="vid">
+                <video src="./videos/video2.mp4" muted></video>
+                <h3 class="title">Ice cream!!!</h3>
+            </div>
+            <div class="vid">
+                <video src="./videos/video3.mp4" muted></video>
+                <h3 class="title">She happy with her chain</h3>
+            </div>
+            <div class="vid">
+                <video src="./videos/video4.mp4" muted></video>
+                <h3 class="title">Not so merry christmas</h3>
+            </div>
+            <div class="vid">
+                <video src="./videos/video5.mp4" muted></video>
+                <h3 class="title">She didn't let me kiss her!</h3>
+            </div>
+            <div class="vid">
+                <video src="./videos/video6.mp4" muted></video>
+                <h3 class="title">Butterfly lover</h3>
+            </div>
+            <div class="vid">
+                <video src="./videos/video7.mp4" muted></video>
+                <h3 class="title">Kisses kisses and more kisses</h3>
+            </div>
+            <div class="vid">
+                <video src="./videos/video8.mp4" muted></video>
+                <h3 class="title">The perfect video of us</h3>
+            </div>
+            <div class="vid">
+                <video src="./videos/Grecia's Birthday.mp4" muted></video>
+                <h3 class="title">Your birthday video</h3>
+            </div>
+            <div class="vid">
+                <video src="./videos/video10.mp4" muted></video>
+                <h3 class="title">¿?</h3>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let listVideo = document.querySelectorAll('.video-list .vid');
+        let mainVideo = document.querySelector('.main-video video');
+        let title = document.querySelector('.main-video .title');
+
+        listVideo.forEach(video => {
+            video.onclick = () => {
+                listVideo.forEach(vid => vid.classList.remove('active'));
+                video.classList.add('active');
+                if (video.classList.contains('active')) {
+                    let src = video.children[0].getAttribute('src');
+                    mainVideo.src = src;
+                    let text = video.children[1].innerHTML;
+                    title.innerHTML = text;
+                }
+            }
+        })
+    </script>
+
+</body>
+
+</html>
