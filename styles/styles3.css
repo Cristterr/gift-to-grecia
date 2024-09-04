@@ -1,0 +1,611 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Neucha", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-image:url('/img/fondo2.jpg');
+}
+
+
+/*Title*/
+h1 {
+    margin: 3%;
+    text-align: center;
+    font-size: 55px;
+    display: inline-block;
+    position: relative;
+    color: rgb(37, 0, 124);
+    font-family: "Patrick Hand", cursive;
+    font-weight: bold;
+    font-style: normal;
+}
+
+h1::after, h1::before {
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 3px;
+    background-color: currentColor;
+    top: 0.6em;
+    transform: scale(0);
+    transition: all 0.2s ease-in;
+}
+
+h1:hover::before, h1:hover::after {
+    transform: scale(1);
+}
+
+h1::before {
+    left: -140px;
+}
+
+h1::after {
+    right: -140px;
+}
+
+
+/*Inicio 1er carrusel 2da página (flowers)*/
+.subtitulo {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin: 50px auto;
+    font-size: 30px;
+}
+
+.wrapper {
+    box-sizing: border-box;
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    height: 500px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.card {
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+
+.card > .row {
+    color: rgb(246, 238, 255);
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card > .row > .icon {
+    background: rgb(46, 46, 255);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.card > .row > .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+.description p {
+    font-weight: bold;
+    color: #d4c8ff;
+    padding-top: 5px;
+}
+
+.description h4 {
+    text-transform: uppercase;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    width: 400px;
+}
+
+input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card[for="c1"] {
+    background-image:url('/img/flowers1.jpg');
+}
+.card[for="c2"] {
+    background-image: url('/img/flowers2.jpg');
+}
+.card[for="c3"] {
+    background-image: url('/img/flowers3.jpg');
+}
+.card[for="c4"] {
+    background-image: url('/img/flowers4.jpg');
+}
+.card[for="c5"] {
+    background-image: url('/img/flowers5.jpg');
+}
+.card[for="c6"] {
+    background-image: url('/img/flowers6.jpg');
+}
+
+
+/*Inicio 2do carrusel 2da página (movies)*/
+.subtitulo2 {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin: 50px auto;
+    font-size: 30px;
+}
+
+.wrapper2 {
+    box-sizing: border-box;
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container2 {
+    height: 500px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.card2 {
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    background-position: center;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+
+.card2 > .row2 {
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card2 > .row2 > .icon2 {
+    background: rgb(93, 93, 255);
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.card2 > .row2 > .description2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+.description2 p {
+    font-weight: bold;
+    color: #d2d2ff;
+    padding-top: 5px;
+}
+
+.description2 h4 {
+    text-transform: uppercase;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    width: 400px;
+}
+
+input:checked + label .description2 {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card2[for="d1"] {
+    background-image:url('/img/movies1.jpg');
+}
+.card2[for="d2"] {
+    background-image: url('/img/movies2.jpg');
+}
+.card2[for="d3"] {
+    background-image: url('/img/movies6.jpg');
+}
+.card2[for="d4"] {
+    background-image: url('/img/movies3.jpg');
+}
+.card2[for="d5"] {
+    background-image: url('/img/movies4.jpg');
+}
+.card2[for="d6"] {
+    background-image: url('/img/movies5.jpg');
+}
+
+
+/*Inicio 3er carrusel 2da página (series)*/
+.subtitulo3 {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin: 50px auto;
+    font-size: 30px;
+}
+
+.wrapper3 {
+    box-sizing: border-box;
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container3 {
+    height: 500px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.card3 {
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    background-position: center;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+
+.card3 > .row3 {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card3 > .row3 > .icon3 {
+    background: rgb(177, 177, 255);
+    color: rgb(27, 15, 71);
+    font-weight: bold;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.card3 > .row3 > .description3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+.description3 p {
+    font-weight: bold;
+    color: #dbd8ff;
+    padding-top: 5px;
+}
+
+.description3 h4 {
+    text-transform: uppercase;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    width: 400px;
+}
+
+input:checked + label .description3 {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card3[for="e1"] {
+    background-image:url('/img/series1.jpg');
+}
+.card3[for="e2"] {
+    background-image: url('/img/series2.jpg');
+}
+.card3[for="e3"] {
+    background-image: url('/img/series3.jpeg');
+}
+.card3[for="e4"] {
+    background-image: url('/img/series5.jpeg');
+}
+.card3[for="e5"] {
+    background-image: url('/img/series4.jpg');
+}
+
+
+/*Inicio 4to carrusel 2da página (games)*/
+.subtitulo4 {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin: 50px auto;
+    font-size: 30px;
+}
+
+.wrapper4 {
+    box-sizing: border-box;
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container4 {
+    height: 500px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.card4 {
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    background-position: center;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+
+.card4 > .row4 {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card4 > .row4 > .icon4 {
+    background: rgb(245, 255, 209);
+    color: rgb(54, 22, 143);
+    font-weight: bold;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.card4 > .row4 > .description4 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+.description4 p {
+    font-weight: bold;
+    color: #ffcbcb;
+    padding-top: 5px;
+}
+
+.description4 h4 {
+    text-transform: uppercase;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    width: 400px;
+}
+
+input:checked + label .description4 {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card4[for="f1"] {
+    background-image:url('/img/games1.jpg');
+}
+.card4[for="f2"] {
+    background-image: url('/img/games2.jpg');
+}
+.card4[for="f3"] {
+    background-image: url('/img/games3.jpg');
+}
+.card4[for="f4"] {
+    background-image: url('/img/games4.jpg');
+}
+.card4[for="f5"] {
+    background-image: url('/img/games5.jpg');
+}
+.card4[for="f6"] {
+    background-image: url('/img/games6.jpg');
+}
+
+
+/*Inicio 5to carrusel 2da página (music)*/
+.subtitulo5 {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin: 50px auto;
+    font-size: 30px;
+}
+
+.wrapper5 {
+    box-sizing: border-box;
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container5 {
+    height: 500px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.card5 {
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    background-position: center;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+
+.card5 > .row5 {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card5 > .row5 > .icon5 {
+    background: rgb(41, 41, 83);
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.card5 > .row5 > .description5 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+.description5 p {
+    font-weight: bold;
+    color: #b8ddff;
+    padding-top: 5px;
+}
+
+.description5 h4 {
+    text-transform: uppercase;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    width: 400px;
+}
+
+input:checked + label .description5 {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card5[for="g1"] {
+    background-image:url('/img/music1.jpeg');
+}
+.card5[for="g2"] {
+    background-image: url('/img/music2.jpg');
+}
+.card5[for="g3"] {
+    background-image: url('/img/music3.jpg');
+}
+.card5[for="g4"] {
+    background-image: url('/img/music4.jpg');
+}
+.card5[for="g5"] {
+    background-image: url('/img/music5.jpeg');
+}
