@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image:url('/img/fondo2.jpg');
+    background-image: url('../img/fondo2.jpg');
 }
 
 
@@ -142,22 +142,22 @@ input:checked + label .description {
 }
 
 .card[for="c1"] {
-    background-image:url('/img/flowers1.jpg');
+    background-image:url('../img/flowers1.jpg');
 }
 .card[for="c2"] {
-    background-image: url('/img/flowers2.jpg');
+    background-image: url('../img/flowers2.jpg');
 }
 .card[for="c3"] {
-    background-image: url('/img/flowers3.jpg');
+    background-image: url('../img/flowers3.jpg');
 }
 .card[for="c4"] {
-    background-image: url('/img/flowers4.jpg');
+    background-image: url('../img/flowers4.jpg');
 }
 .card[for="c5"] {
-    background-image: url('/img/flowers5.jpg');
+    background-image: url('../img/flowers5.jpg');
 }
 .card[for="c6"] {
-    background-image: url('/img/flowers6.jpg');
+    background-image: url('../img/flowers6.jpg');
 }
 
 
@@ -256,22 +256,22 @@ input:checked + label .description2 {
 }
 
 .card2[for="d1"] {
-    background-image:url('/img/movies1.jpg');
+    background-image:url('../img/movies1.jpg');
 }
 .card2[for="d2"] {
-    background-image: url('/img/movies2.jpg');
+    background-image: url('../img/movies2.jpg');
 }
 .card2[for="d3"] {
-    background-image: url('/img/movies6.jpg');
+    background-image: url('../img/movies6.jpg');
 }
 .card2[for="d4"] {
-    background-image: url('/img/movies3.jpg');
+    background-image: url('../img/movies3.jpg');
 }
 .card2[for="d5"] {
-    background-image: url('/img/movies4.jpg');
+    background-image: url('../img/movies4.jpg');
 }
 .card2[for="d6"] {
-    background-image: url('/img/movies5.jpg');
+    background-image: url('../img/movies5.jpg');
 }
 
 
@@ -370,19 +370,19 @@ input:checked + label .description3 {
 }
 
 .card3[for="e1"] {
-    background-image:url('/img/series1.jpg');
+    background-image:url('../img/series1.jpg');
 }
 .card3[for="e2"] {
-    background-image: url('/img/series2.jpg');
+    background-image: url('../img/series2.jpg');
 }
 .card3[for="e3"] {
-    background-image: url('/img/series3.jpeg');
+    background-image: url('../img/series3.jpeg');
 }
 .card3[for="e4"] {
-    background-image: url('/img/series5.jpeg');
+    background-image: url('../img/series5.jpeg');
 }
 .card3[for="e5"] {
-    background-image: url('/img/series4.jpg');
+    background-image: url('../img/series4.jpg');
 }
 
 
@@ -481,22 +481,22 @@ input:checked + label .description4 {
 }
 
 .card4[for="f1"] {
-    background-image:url('/img/games1.jpg');
+    background-image:url('../img/games1.jpg');
 }
 .card4[for="f2"] {
-    background-image: url('/img/games2.jpg');
+    background-image: url('../img/games2.jpg');
 }
 .card4[for="f3"] {
-    background-image: url('/img/games3.jpg');
+    background-image: url('../img/games3.jpg');
 }
 .card4[for="f4"] {
-    background-image: url('/img/games4.jpg');
+    background-image: url('../img/games4.jpg');
 }
 .card4[for="f5"] {
-    background-image: url('/img/games5.jpg');
+    background-image: url('../img/games5.jpg');
 }
 .card4[for="f6"] {
-    background-image: url('/img/games6.jpg');
+    background-image: url('../img/games6.jpg');
 }
 
 
@@ -595,17 +595,17 @@ input:checked + label .description5 {
 }
 
 .card5[for="g1"] {
-    background-image:url('/img/music1.jpeg');
+    background-image:url('../img/music1.jpeg');
 }
 .card5[for="g2"] {
-    background-image: url('/img/music2.jpg');
+    background-image: url('../img/music2.jpg');
 }
 .card5[for="g3"] {
-    background-image: url('/img/music3.jpg');
+    background-image: url('../img/music3.jpg');
 }
 .card5[for="g4"] {
-    background-image: url('/img/music4.jpg');
+    background-image: url('../img/music4.jpg');
 }
 .card5[for="g5"] {
-    background-image: url('/img/music5.jpeg');
+    background-image: url('../img/music5.jpeg');
 }
