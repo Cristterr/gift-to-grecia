@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.5">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/lightbox.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="img/heart.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Itim&family=Julee&family=Merienda:wght@300..900&family=Neucha&family=Patrick+Hand&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/887a835504.js" crossorigin="anonymous"></script>
+    <title>Grecia's Birthday</title>
+</head>
+
+<body>
+
+    <!--Footer-->
+    <header class="header">
+        <div class="logo">
+            <img src="./img/symbolRavenclaw.png" alt="Ravenclaw Symbol">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href id="abrirPagina1">Likes</a></li>
+                <li><a href id="abrirPagina3">Videos</a></li>
+                <li><a href="#">(soon)</a></li>
+            </ul>
+        </nav>
+        <a class="btn" href id="abrirPagina2"><button>¡SURPRAISE!</button></a>
+    </header>
+
+    <br>
+
+    <h1 class="titulo">Image Gallery</h1>
+
+    <h4 class="subtitulo1">
+        Grecia is a girl who loves photos, on this website we will see the best photos of her below. Her boyfriend made
+        a page that his girlfriend likes so much, so she can always see how beautiful she is, the things she likes, some
+        cute videos and finally a special surprise!!! I hope you enjoy it a lot.
+    </h4>
+
+    <!--Carrusel 1 (artist)-->
+    <div class="slider-box">
+        <ul>
+            <li>
+                <img src="./img/artist1.jpg" alt="artist1">
+                <div class="texto">
+                    <h2>Artist</h2>
+                    <p>
+                        She knows draw and paint very well, more than me, she is an artist
+                    </p>
+                </div>
+            </li>
+            <li>
+                <img src="./img/artist2.jpg" alt="artist2">
+            </li>
+            <li>
+                <img src="./img/artist3.jpg" alt="artist3">
+            </li>
+            <li>
+                <img src="./img/artist4.jpg" alt="artist4">
+            </li>
+            <li>
+                <img src="./img/artist5.jpg" alt="artist5">
+            </li>
+            <li>
+                <img src="./img/artist6.jpg" alt="artist6">
+            </li>
+        </ul>
+    </div>
+
+
+    <!--Carrusel 2 (my artist)-->
+    <div class="ful-img2" id="fulImgBox2">
+        <img src="./img/myartist1.jpg" id="fulImg2" alt="">
+        <span onclick="closeImg2()">X</span>
+    </div>
+
+    <h3 class="subtitulo2">She is my artist, is perfect, I love her photos, she is beautiful</h3>
+    <div class="img-gallery2">
+        <picture>
+            <source media="(max-width: 768px)" srcset="./img/myartist2.jpg">
+            <img src="./img/myartist1.jpg" onclick="openFulImg2(this.src)" alt="myartist1">
+        </picture>
+        <picture>
+            <source media="(max-width: 768px)" srcset="./img/myartist4.jpg">
+            <img src="./img/myartist3.jpg" onclick="openFulImg2(this.src)" alt="myartist3">
+        </picture>
+        <picture>
+            <source media="(max-width: 768px)" srcset="./img/myartist6.jpg">
+            <img src="./img/myartist5.jpg" onclick="openFulImg2(this.src)" alt="myartist5">
+        </picture>
+        <picture>
+            <source media="(max-width: 768px)" srcset="./img/myartist8.jpg">
+            <img src="./img/myartist7.jpg" onclick="openFulImg2(this.src)" alt="myartist7">
+        </picture>
+        <picture>
+            <source media="(max-width: 768px)" srcset="./img/myartist10.jpg">
+            <img src="./img/myartist9.jpg" onclick="openFulImg2(this.src)" alt="myartist9">
+        </picture>
+    </div>
+
+
+    <!--Carrusel 3 (mirror)-->
+    <h3 class="subtitulo3">My Grecia's favorite photos are and will be always photos in the mirror, she looks so
+        pretty
+        and I love it</h3>
+    <div class="conteCarrousel">
+        <div class="itemCarrousel" id="itemCarrousel-1">
+            <div class="itemCarrouselTarjeta">
+                <img src="./img/mirror1.jpg" alt="mirror1">
+            </div>
+            <div class="itemCarrouselArrows">
+                <a href="#itemCarrousel-8">
+                    <i class="bx bxs-chevron-left"></i>
+                </a>
+                <a href="#itemCarrousel-2">
+                    <i class="bx bxs-chevron-right"></i>
+                </a>
+            </div>
+        </div>
+        <div class="itemCarrousel" id="itemCarrousel-2">
+            <div class="itemCarrouselTarjeta">
+                <img src="./img/mirror2.jpg" alt="mirror2">
+            </div>
+            <div class="itemCarrouselArrows">
+                <a href="#itemCarrousel-1">
+                    <i class="bx bxs-chevron-left"></i>
+                </a>
+                <a href="#itemCarrousel-3">
+                    <i class="bx bxs-chevron-right"></i>
+                </a>
+            </div>
+        </div>
+        <div class="itemCarrousel" id="itemCarrousel-3">
+            <div class="itemCarrouselTarjeta">
+                <img src="./img/mirror3.jpg" alt="mirror3">
+            </div>
+            <div class="itemCarrouselArrows">
+                <a href="#itemCarrousel-2">
+                    <i class="bx bxs-chevron-left"></i>
+                </a>
+                <a href="#itemCarrousel-4">
+                    <i class="bx bxs-chevron-right"></i>
+                </a>
+            </div>
+        </div>
+        <div class="itemCarrousel" id="itemCarrousel-4">
+            <div class="itemCarrouselTarjeta">
+                <img src="./img/mirror4.jpg" alt="mirror4">
+            </div>
+            <div class="itemCarrouselArrows">
+                <a href="#itemCarrousel-3">
+                    <i class="bx bxs-chevron-left"></i>
+                </a>
+                <a href="#itemCarrousel-5">
+                    <i class="bx bxs-chevron-right"></i>
+                </a>
+            </div>
+        </div>
+        <div class="itemCarrousel" id="itemCarrousel-5">
+            <div class="itemCarrouselTarjeta">
+                <img src="./img/mirror5.jpg" alt="mirror5">
+            </div>
+            <div class="itemCarrouselArrows">
+                <a href="#itemCarrousel-4">
+                    <i class="bx bxs-chevron-left"></i>
+                </a>
+                <a href="#itemCarrousel-6">
+                    <i class="bx bxs-chevron-right"></i>
+                </a>
+            </div>
+        </div>
+        <div class="itemCarrousel" id="itemCarrousel-6">
+            <div class="itemCarrouselTarjeta">
+                <img src="./img/mirror6.jpg" alt="mirror6">
+            </div>
+            <div class="itemCarrouselArrows">
+                <a href="#itemCarrousel-5">
+                    <i class="bx bxs-chevron-left"></i>
+                </a>
+                <a href="#itemCarrousel-7">
+                    <i class="bx bxs-chevron-right"></i>
+                </a>
+            </div>
+        </div>
+        <div class="itemCarrousel" id="itemCarrousel-7">
+            <div class="itemCarrouselTarjeta">
+                <img src="./img/mirror7.jpg" alt="mirror7">
+            </div>
+            <div class="itemCarrouselArrows">
+                <a href="#itemCarrousel-6">
+                    <i class="bx bxs-chevron-left"></i>
+                </a>
+                <a href="#itemCarrousel-8">
+                    <i class="bx bxs-chevron-right"></i>
+                </a>
+            </div>
+        </div>
+        <div class="itemCarrousel" id="itemCarrousel-8">
+            <div class="itemCarrouselTarjeta">
+                <img src="./img/mirror8.jpg" alt="mirror8">
+            </div>
+            <div class="itemCarrouselArrows">
+                <a href="#itemCarrousel-7">
+                    <i class="bx bxs-chevron-left"></i>
+                </a>
+                <a href="#itemCarrousel-1">
+                    <i class="bx bxs-chevron-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Carrusel 4 (selfies)-->
+    <h3 class="subtitulo4"> Of course, I love her selfies, her face is so cute, is my favorite in the entire
+        world
+    </h3>
+    <section class="container">
+        <div class="slider-wrapper">
+            <div class="slider">
+                <img id="slider-1" src="./img/selfie1.jpg" alt="selfie1">
+                <img id="slider-2" src="./img/selfie2.jpg" alt="selfie2">
+                <img id="slider-3" src="./img/selfie3.jpg" alt="selfie3">
+                <img id="slider-4" src="./img/selfie4.jpg" alt="selfie4">
+                <img id="slider-5" src="./img/selfie5.jpg" alt="selfie5">
+                <img id="slider-6" src="./img/selfie6.jpg" alt="selfie6">
+                <img id="slider-7" src="./img/selfie7.jpg" alt="selfie7">
+                <img id="slider-8" src="./img/selfie8.jpg" alt="selfie8">
+                <img id="slider-9" src="./img/selfie9.jpg" alt="selfie9">
+                <img id="slider-10" src="./img/selfie10.jpg" alt="selfie10">
+
+            </div>
+            <div class="slider-nav">
+                <a href="#slider-1"></a>
+                <a href="#slider-2"></a>
+                <a href="#slider-3"></a>
+                <a href="#slider-4"></a>
+                <a href="#slider-5"></a>
+                <a href="#slider-6"></a>
+                <a href="#slider-7"></a>
+                <a href="#slider-8"></a>
+                <a href="#slider-9"></a>
+                <a href="#slider-10"></a>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!--Carrusel 5 (sky)-->
+    <div class="ful-img" id="fulImgBox">
+        <img src="./img/sky1.jpg" id="fulImg" alt="">
+        <span onclick="closeImg()">X</span>
+    </div>
+
+    <h3 class="subtitulo5">She loves take photos to the sky and show me, I really love it hers photos, they're
+        so
+        beautifuls</h3>
+    <div class="img-gallery">
+        <picture>
+            <source media="(max-width: 768px)" srcset="./img/sky2.jpg">
+            <img src="./img/sky1.jpg" onclick="openFulImg(this.src)" alt="sky1">
+        </picture>
+        <picture>
+            <source media="(max-width: 768px)" srcset="./img/sky4.jpg">
+            <img src="./img/sky3.jpg" onclick="openFulImg(this.src)" alt="sky3">
+        </picture>
+        <picture>
+            <source media="(max-width: 768px)" srcset="./img/sky6.jpg">
+            <img src="./img/sky5.jpg" onclick="openFulImg(this.src)" alt="sky5">
+        </picture>
+        <picture>
+            <source media="(max-width: 768px)" srcset="./img/sky7.jpg">
+            <img src="./img/sky8.jpg" onclick="openFulImg(this.src)" alt="sky8">
+        </picture>
+        <picture>
+            <source media="(max-width: 768px)" srcset="./img/sky14.jpg">
+            <img src="./img/sky13.jpg" onclick="openFulImg(this.src)" alt="sky13">
+        </picture>
+        <picture>
+            <source media="(max-width: 768px)" srcset="./img/sky10.jpg">
+            <img src="./img/sky9.jpg" onclick="openFulImg(this.src)" alt="sky9">
+        </picture>
+        <picture>
+            <source media="(max-width: 768px)" srcset="./img/sky11.jpg">
+            <img src="./img/sky12.jpg" onclick="openFulImg(this.src)" alt="sky12">
+        </picture>
+        <picture>
+            <source media="(max-width: 768px)" srcset="./img/sky16.jpg">
+            <img src="./img/sky15.jpg" onclick="openFulImg(this.src)" alt="sky15">
+        </picture>
+    </div>
+
+
+    <!--Carrusel 6 (mysky)-->
+    <h3 class="subtitulo6">She is my sky, I adore her, and I adore the sky thanks to her.</h3>
+    <div class="slider-box3">
+        <ul>
+            <li>
+                <img src="./img/mysky1.jpg" alt="mysky1">
+                <div class="texto3">
+                    <h2>My beautiful sky</h2>
+                    <p>
+                        She's perfect like the sunset
+                    </p>
+                </div>
+            </li>
+            <li>
+                <img src="./img/mysky2.jpg" alt="mysky2">
+                <div class="texto3">
+                    <p>
+                        Just look at her!
+                    </p>
+                </div>
+            </li>
+            <li>
+                <img src="./img/mysky3.jpg" alt="mysky3">
+                <div class="texto3">
+                    <p>
+                        Gorgeous like the skyscrapers
+                    </p>
+                </div>
+            </li>
+            <li>
+                <img src="./img/mysky4.jpg" alt="mysky4">
+                <div class="texto3">
+                    <p>
+                        Pretty like the sea sky
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+    <!--Carrusel 7 (herboyfriend)-->
+    <div class="ful-img3" id="fulImgBox3">
+        <img src="./img/herboyfriend1.jpg" id="fulImg3" alt="">
+        <span onclick="closeImg3()">X</span>
+    </div>
+
+    <h3 class="subtitulo7">She loves take pictures to me, she is my photographer, I love her and I like my
+        photos by her
+    </h3>
+    <div class="img-gallery3">
+        <picture>
+            <source media="(max-width: 768px)" srcset="./img/herboyfriend2.jpg">
+            <img src="./img/herboyfriend1.jpg" onclick="openFulImg3(this.src)" alt="herboyfriend1">
+        </picture>
+        <picture>
+            <source media="(max-width: 768px)" srcset="./img/herboyfriend4.jpg">
+            <img src="./img/herboyfriend3.jpg" onclick="openFulImg3(this.src)" alt="herboyfriend3">
+        </picture>
+        <picture>
+            <source media="(max-width: 768px)" srcset="./img/herboyfriend6.jpg">
+            <img src="./img/herboyfriend5.jpg" onclick="openFulImg3(this.src)" alt="herboyfriend5">
+        </picture>
+        <picture>
+            <source media="(max-width: 768px)" srcset="./img/herboyfriend8.jpg">
+            <img src="./img/herboyfriend7.jpg" onclick="openFulImg3(this.src)" alt="herboyfriend7">
+        </picture>
+        <picture>
+            <source media="(max-width: 768px)" srcset="./img/herboyfriend10.jpg">
+            <img src="./img/herboyfriend9.jpg" onclick="openFulImg3(this.src)" alt="herboyfriend9">
+        </picture>
+        <picture>
+            <source media="(max-width: 768px)" srcset="./img/herboyfriend12.jpg">
+            <img src="./img/herboyfriend11.jpg" onclick="openFulImg3(this.src)" alt="herboyfriend11">
+        </picture>
+    </div>
+
+
+
+    <!--Carrusel 8 (us)-->
+    <h3 class="subtitulo8">But, I also love our photos together, I always see them, is my favorite thing,
+        remember our
+        happy moments</h3>
+    <div class="container-3">
+        <div class="gallery2">
+            <a href="./img/us1.jpg" data-lightbox="models" data-title="Both very very comfortable">
+                <img src="./img/us1.jpg" alt="">
+            </a>
+            <a href="./img/us2.jpg" data-lightbox="models" data-title="Ohhhh, que seraaaaa???">
+                <img src="./img/us2.jpg" alt="">
+            </a>
+            <a href="./img/us7.jpg" data-lightbox="models" data-title="Getaways to traki">
+                <img src="./img/us7.jpg" alt="">
+            </a>
+            <a href="./img/us4.jpg" data-lightbox="models" data-title="Sharing empanadas">
+                <img src="./img/us4.jpg" alt="">
+            </a>
+            <a href="./img/us6.jpg" data-lightbox="models" data-title="Mi malcriada, te amo">
+                <img src="./img/us6.jpg" alt="">
+            </a>
+            <a href="./img/us5.jpg" data-lightbox="models" data-title="A great nurse (she healed me)">
+                <img src="./img/us5.jpg" alt="">
+            </a>
+            <a href="./img/us3.jpg" data-lightbox="models" data-title="The perfect photo">
+                <img src="./img/us3.jpg" alt="">
+            </a>
+            <a href="./img/us8.jpg" data-lightbox="models" data-title="So cute in the botanical garden">
+                <img src="./img/us8.jpg" alt="">
+            </a>
+            <a href="./img/us9.jpg" data-lightbox="models" data-title="We love this photo, our wallpaper">
+                <img src="./img/us9.jpg" alt="">
+            </a>
+            <a href="./img/us10.jpg" data-lightbox="models" data-title="My safe place">
+                <img src="./img/us10.jpg" alt="">
+            </a>
+            <a href="./img/us11.jpg" data-lightbox="models" data-title="Par de guapos">
+                <img src="./img/us11.jpg" alt="">
+            </a>
+            <a href="./img/us12.jpg" data-lightbox="models" data-title="Our last photo together (for now)">
+                <img src="./img/us12.jpg" alt="">
+            </a>
+        </div>
+    </div>
+
+
+    <!--Carrusel 9 (letters)-->
+    <div class="slider-box2">
+        <ul>
+            <li>
+                <img src="./img/letters1.jpg" alt="letters1">
+                <div class="texto2">
+                    <h2>Writer</h2>
+                    <p>
+                        Her letters are incredibles, I tell her she should be a writer, she would be a very
+                        famous one
+                    </p>
+                </div>
+            </li>
+            <li>
+                <img src="./img/letters2.jpg" alt="artist2">
+                <div class="texto2">
+                    <h2>Her perfect signature</h2>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+    <!--Carrusel 10 (randoms)-->
+    <h3 class="subtitulo9">A category that I love and keep fondly in my gallery, are these photos hehe, photos
+        random
+    </h3>
+    <div class="container-2">
+        <div class="gallery">
+            <a href="./img/random1.jpg" data-lightbox="models" data-title="Her Ootd">
+                <img src="./img/random1.jpg" alt="">
+            </a>
+            <a href="./img/random2.jpg" data-lightbox="models" data-title="Eating bread">
+                <img src="./img/random2.jpg" alt="">
+            </a>
+            <a href="./img/random3.jpg" data-lightbox="models" data-title="Kiss (I love them)">
+                <img src="./img/random3.jpg" alt="">
+            </a>
+            <a href="./img/random4.jpg" data-lightbox="models" data-title="Sticking out tongue">
+                <img src="./img/random4.jpg" alt="">
+            </a>
+            <a href="./img/random5.jpg" data-lightbox="models" data-title="Kiss with her boyfriend">
+                <img src="./img/random5.jpg" alt="">
+            </a>
+            <a href="./img/random6.jpg" data-lightbox="models" data-title="With Mateo">
+                <img src="./img/random6.jpg" alt="">
+            </a>
+            <a href="./img/random7.jpg" data-lightbox="models" data-title="Her nails with her favorite color">
+                <img src="./img/random7.jpg" alt="">
+            </a>
+            <a href="./img/random8.jpg" data-lightbox="models" data-title="COD in real life (she's expert)">
+                <img src="./img/random8.jpg" alt="">
+            </a>
+        </div>
+    </div>
+    <br>
+
+
+    <!--Footer-->
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="img/symbolRavenclaw.png" alt="Logo de Ravenclaw">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>¡SURPRAISE!</h2>
+                <p>I know you like surpraises, I have a special one for you, for being as cute as one and
+                    because you
+                    love it the way I love you</p>
+                <p>Click on the Ravenclaw and then the surpraise button</p>
+            </div>
+            <div class="box">
+                <h2>Her social medias</h2>
+                <div class="red-social">
+                    <a href="https://www.facebook.com/grecia.bozo.29" target="_blank" class='bx bxl-facebook'></a>
+                    <a href="https://www.instagram.com/g.greess/" target="_blank" class="bx bxl-instagram"></a>
+                    <a href="https://www.tiktok.com/@g.gresss" target="_blank" class="bx bxl-tiktok"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2024 <b>With lots of love, Cris</b> - All rights reserved.</small>
+        </div>
+    </footer>
+
+    <script src="./scripts/scripts.js"></script>
+    <script src="./scripts/lightbox-plus-jquery.min.js"></script>
+
+</body>
+
+</html>
