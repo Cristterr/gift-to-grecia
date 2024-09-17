@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PONG</title>
+    <title>Pong</title>
     <style>
         * {
             padding: 0;
@@ -208,7 +208,7 @@
             border-radius: 15px;
             box-shadow: 0 0 30px rgba(255, 255, 255, 0.7);
             animation: pop-in 0.5s ease forwards;
-            font-family: 'Arial', sans-serif;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             z-index: 9999;
         }
 
@@ -510,12 +510,12 @@
             if (resultado != 0) {
                 if (resultado == 1) {
                     marcador1.GanarPunto();
-                    if (marcador1.puntos === 1) {
+                    if (marcador1.puntos === 3) {
                         EndGame("You won my heart!");
                     }
                 } else if (resultado == 2) {
                     marcador2.GanarPunto();
-                    if (marcador2.puntos === 1) {
+                    if (marcador2.puntos === 3) {
                         EndGame("You lost, try again!");
                     }
                 }
