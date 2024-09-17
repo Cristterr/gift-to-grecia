@@ -14,6 +14,11 @@ document.getElementById("abrirPagina3").addEventListener("click", function () {
     window.open("./videos.html", "_blank");
 });
 
+// Función para abrir la pestaña de los juegos
+document.getElementById("abrirPagina4").addEventListener("click", function () {
+    window.open("./pong.html", "_blank");
+});
+
 // Carrusel 2 (myartist)
 const fulImgBox2 = document.getElementById("fulImgBox2"),
 fulImg2 = document.getElementById("fulImg2");
